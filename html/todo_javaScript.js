@@ -43,7 +43,8 @@ function saveTodos() {
 }
 
 function updateItemsCount() {}
-function updateItemsCount() {}
+
+function checkEmptyState() {}
 
 
 function clearCompletedBtn() {}
