@@ -42,9 +42,26 @@ function saveTodos() {
     checkEmptyState()
 }
 
-function updateItemsCount() {}
+function updateItemsCount() {
+    const uncompletedTodos = todo.filter(todo => !todo.completed)
+    itemsLeft.textContent = `$(uncompletedTodos.lenght) item${
+    uncompletedTodos.lenght !== 1 ? "s" : ""
+    } left`;
+}
 
-function checkEmptyState() {}
+function checkEmptyState() {
+    const fliteredTodos = fliteredTodos(currentFilter)
+}
 
+function fliteredTodos(filter) {
+    switch(filter) {
+        case "active":
+            return todos.filter(todo => !todo.completed)
+        case "completed":
+            return todos.filter(todo => todo.completed)
+
+        
+    }
+}
 
 function clearCompletedBtn() {}
