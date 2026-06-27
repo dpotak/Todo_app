@@ -26,3 +26,11 @@ body {
     color: var(--dark);
 }
 
+.app {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
