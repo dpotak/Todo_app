@@ -243,3 +243,7 @@ footer {
     transition: all 0.2s;
 }
 
+#clear-completed:hover {
+    color: var(--danger);
+}
+
