@@ -29,7 +29,21 @@ function addTodo(text) {
         text,
         completed:false
     }
+
+    todos.push(todo)
+
+    saveTodos()
+    // renderTodos()
 }
+
+function saveTodos() {
+    localStorage.setItem("todos", JSON.stringify(todos))
+    updateItemsCount()
+    checkEmptyState()
+}
+
+function updateItemsCount() {}
+function updateItemsCount() {}
 
 
 function clearCompletedBtn() {}
