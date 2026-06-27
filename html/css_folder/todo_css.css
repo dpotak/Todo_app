@@ -32,6 +32,17 @@ body {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.01);
 }
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 25px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
 
