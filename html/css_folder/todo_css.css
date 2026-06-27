@@ -66,6 +66,7 @@ header p {
     border: 1px solid #dee2e6;
     font-size: 1rem;
     transition: all 0.2s;
+    border-radius: 6px;
 }
 
 .todo-input input:focus {
@@ -73,5 +74,28 @@ header p {
     border-color: var(--primary);
     box-shadow:  0 0 0 3px rgba(119, 73, 248, 0.15);
 }
+
+.todo-input button {
+    background-color: var(--primary);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.todo-input button:hover {
+    background-color: var(--primary-light);
+}
+
+.filter {
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid var(--border);
+    padding: 15px 25px;
+}
+
 
 
