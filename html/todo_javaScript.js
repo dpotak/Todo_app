@@ -63,22 +63,15 @@ clearCompletedBtn.addEventListener(
 // FILTERS
 
 filters.forEach(filter=>{
-
-filter.addEventListener(
-"click",
-()=>{
-
-filters.forEach(f=>
-f.classList.remove("active")
+    filter.addEventListener(
+        "click", ()=>{
+            
+    filters.forEach(f=> f.classList.remove("active")
 );
 
 filter.classList.add("active");
-
-currentFilter =
-filter.dataset.filter;
-
+currentFilter = filter.dataset.filter;
 renderTodos();
-
 }
 );
 
