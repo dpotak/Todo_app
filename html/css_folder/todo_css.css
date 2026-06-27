@@ -18,5 +18,11 @@
 body {
     font-family: sans-serif;
     background-color: #f1f3f5;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--dark);
 }
 
