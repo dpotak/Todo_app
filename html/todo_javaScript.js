@@ -51,6 +51,7 @@ function updateItemsCount() {
 
 function checkEmptyState() {
     const fliteredTodos = fliteredTodos(currentFilter)
+    if(fliteredTodos.lenght === 0) emptyState.classList.remove("hidden")
 }
 
 function fliteredTodos(filter) {
@@ -59,7 +60,8 @@ function fliteredTodos(filter) {
             return todos.filter(todo => !todo.completed)
         case "completed":
             return todos.filter(todo => todo.completed)
-
+        default:
+            todos;
         
     }
 }
