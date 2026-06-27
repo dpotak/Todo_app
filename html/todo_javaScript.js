@@ -18,3 +18,18 @@ addTaskBtn.addEventListener("click", () => {
 taskInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") addTodo(taskInput.value);
 })
+
+clearCompletedBtn.addEventListener("click", clearCompletedBtn)
+
+function addTodo(text) {
+    if(text.trim() === "") return
+
+    const todo = {
+        id: Date.now(),
+        text,
+        completed:false
+    }
+}
+
+
+function clearCompletedBtn() {}
