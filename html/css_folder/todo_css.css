@@ -52,6 +52,16 @@ header p {
     opacity: 0.9;
 }
 
+.todo-input {
+    padding: 20px 25px;
+    display: flex;
+    gap: 10px;
+    background-color: var(--light);
+    border-bottom: 1px solid var(--border);
+}
 
+.todo-input input {
+    flex: 1;
+}
 
 
