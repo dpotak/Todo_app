@@ -1,7 +1,4 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { createApp } from 'vue'
+import App from './App.vue'
 
-export default defineConfig({
-  plugins: [vue()],
-  base: '/Todo_app/',   // 👈 ВАЖНО (имя репозитория)
-})
+createApp(App).mount('#app')
