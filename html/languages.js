@@ -1,27 +1,27 @@
 const translations={
 en:{
     my_tasks: "My tasks",
-    complete_1: "",
-    all_1: "",
-    active_1: "",
+    complete_1: "Completed",
+    all_1: "All",
+    active_1: "Active",
 
 },
 
 ru:{
 
     my_tasks: "Мои задачи",
-    complete_1: "",
-    all_1: "",
-    active_1: "",
+    complete_1: "Завершенный",
+    all_1: "Все",
+    active_1: "Активный",
 
 },
 
 
 et:{
     my_tasks: "Minu ülesanded",
-    complete_1: "",
-    all_1: "",
-    active_1: "",
+    complete_1: "Lõpetatud",
+    all_1: "Kõik",
+    active_1: "Aktiivne",
 
 }
 };
