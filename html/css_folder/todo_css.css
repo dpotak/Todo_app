@@ -247,3 +247,22 @@ footer {
     color: var(--danger);
 }
 
+
+.btn_languages {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.btn_lang_rus , .btn_lang_eng , .btn_lang_est {
+    width: 80px;
+    height: 25px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    color: #f1f3f5;
+}
+
+.btn_lang_rus , .btn_lang_eng , 
+.btn_lang_est:hover {
+
+}
