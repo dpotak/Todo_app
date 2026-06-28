@@ -4,6 +4,12 @@ en:{
     complete_1: "Completed",
     all_1: "All",
     active_1: "Active",
+    tasks_here_yet: "",
+    items_left: "",
+    clear_completed: "",
+    Russia_1: "",
+    English_1: "",
+    Estonian_1: "",
 
 },
 
@@ -13,6 +19,12 @@ ru:{
     complete_1: "Завершенный",
     all_1: "Все",
     active_1: "Активный",
+    tasks_here_yet: "",
+    items_left: "",
+    clear_completed: "",
+    Russia_1: "",
+    English_1: "",
+    Estonian_1: "",
 
 },
 
@@ -22,6 +34,12 @@ et:{
     complete_1: "Lõpetatud",
     all_1: "Kõik",
     active_1: "Aktiivne",
+    tasks_here_yet: "",
+    items_left: "",
+    clear_completed: "",
+    Russia_1: "",
+    English_1: "",
+    Estonian_1: "",
 
 }
 };
