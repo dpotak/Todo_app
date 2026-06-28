@@ -1,52 +1,103 @@
 const translations={
 en:{
+    my_tasks: "My tasks",
 
 },
 
-
-
 ru:{
 
+    my_tasks: "Мои задачи",
 
 },
 
 
 et:{
-
+    my_tasks: "Minu ülesanded",
 
 }
 };
 
 function setLang(lang){
-document.querySelectorAll("[data-i18n]").forEach(el=>{
-el.innerText=translations[lang][el.dataset.i18n];
-});
-}
 
-function toggleDropdown() {
-    document.getElementById("dropdown").classList.toggle("show");
-}
-
-const projects = document.querySelectorAll(
-  '.kvadrat_1_progetcs, .kvadrat_2_progetcs, .kvadrat_3_progetcs, .kvadrat_4_progetcs, .kvadrat_5_progetcs'
+localStorage.setItem(
+"language",
+lang
 );
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-}, {
-  threshold: 0.15
-});
 
-projects.forEach(p => observer.observe(p));
+document
+.querySelectorAll(
+"[data-i18n]"
+)
+.forEach(el=>{
 
-function toggleSkill(id){
+const key=
+el.dataset.i18n;
 
-const block=document.getElementById(id);
+if(
+translations[lang][key]
+){
 
-block.classList.toggle("active");
+el.innerText=
+translations[lang][key];
 
 }
+
+});
+
+
+document
+.querySelectorAll(
+"[data-i18n-placeholder]"
+)
+.forEach(el=>{
+
+const key=
+el.dataset.i18nPlaceholder;
+
+if(
+translations[lang][key]
+){
+
+el.placeholder=
+translations[lang][key];
+
+}
+
+});
+
+}
+
+
+
+document
+.querySelector(
+".btn_lang_eng"
+)
+.addEventListener(
+"click",
+()=>setLang("en")
+);
+
+
+document
+.querySelector(
+".btn_lang_rus"
+)
+.addEventListener(
+"click",
+()=>setLang("ru")
+);
+
+
+document .querySelector( ".btn_lang_est") .addEventListener( "click", ()=>setLang("et"));
+
+
+
+const savedLang =
+localStorage.getItem(
+"language"
+) || "en";
+
+
+setLang(savedLang);
