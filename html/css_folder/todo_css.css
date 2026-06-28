@@ -262,7 +262,8 @@ footer {
     color: #f1f3f5;
 }
 
-.btn_lang_rus , .btn_lang_eng , 
+.btn_lang_rus:hover , .btn_lang_eng:hover , 
 .btn_lang_est:hover {
-
+    background-color: var(--primary-light);  
+    transition: all 0.2s; 
 }
