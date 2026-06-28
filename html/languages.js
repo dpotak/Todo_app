@@ -4,12 +4,12 @@ en:{
     complete_1: "Completed",
     all_1: "All",
     active_1: "Active",
-    tasks_here_yet: "",
-    items_left: "",
-    clear_completed: "",
-    Russia_1: "",
-    English_1: "",
-    Estonian_1: "",
+    tasks_here_yet: "No tasks here yet",
+    items_left: " items left",
+    clear_completed: "Clear completed",
+    Russia_1: "Russia",
+    English_1: "English",
+    Estonian_1: "Estonian",
 
 },
 
@@ -22,9 +22,9 @@ ru:{
     tasks_here_yet: "",
     items_left: "",
     clear_completed: "",
-    Russia_1: "",
-    English_1: "",
-    Estonian_1: "",
+    Russia_1: "Русский",
+    English_1: "Англиский",
+    Estonian_1: "Эстонский",
 
 },
 
@@ -37,9 +37,9 @@ et:{
     tasks_here_yet: "",
     items_left: "",
     clear_completed: "",
-    Russia_1: "",
-    English_1: "",
-    Estonian_1: "",
+    Russia_1: "Vene keel",
+    English_1: "Inglise keel",
+    Estonian_1: "Eesti keel",
 
 }
 };
