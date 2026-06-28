@@ -131,3 +131,25 @@ localStorage.getItem(
 
 
 setLang(savedLang);
+
+function setLang(lang){
+
+localStorage.setItem("language", lang);
+
+// TEXT CONTENT
+document.querySelectorAll("[data-i18n]").forEach(el => {
+const key = el.dataset.i18n;
+if (translations[lang][key]) {
+el.innerText = translations[lang][key];
+}
+});
+
+// PLACEHOLDER
+document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+const key = el.dataset.i18nPlaceholder;
+if (translations[lang][key]) {
+el.placeholder = translations[lang][key];
+}
+});
+
+}
