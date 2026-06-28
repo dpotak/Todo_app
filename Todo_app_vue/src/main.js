@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#app')
+export default defineConfig({
+  plugins: [vue()],
+  base: '/Todo_app/Todo_app_vue/',
+})
